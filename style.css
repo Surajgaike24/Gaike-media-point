@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #0B1C2D;
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    color: #F59E0B !important;
+    /* saffron brand color */
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navbar button {
+    height: 30px;
+    width: 250px;
+    border-radius: 100px;
+    background-color: #F59E0B;
+    font-family: 15px;
+    font-weight: 600;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width:943px) {
+
+    .navbar {
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 25px;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+        color: white;
+        font-size: 30px;
+
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        background-color: #0B1C2D;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+
+    }
+
+    .nav-menu.active {
+        display: block;
+        text-align: center;
+        position: static;
+    }
+
+    .nav-menu button {
+        width: 220px;
+    }
+
+    button.nav-menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button.nav-menu.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+}
+
+.title {
+    height: 12.25rem;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.subtitle h4 {
+    color: #F59E0B;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.tagline {
+    height: 50px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+
+    /* Responsive size */
+    font-size: clamp(14px, 2.5vw, 20px);
+
+    /* Center properly */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+.tagline p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btnherosection {
+    height: 6.25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnsection {
+    height: 6.25rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.btn1 {
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 100px;
+    background-color: #F59E0B;
+}
+
+.btn2 {
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    /* margin-left: 5px; */
+}
+
+
+@media (max-width:900px) {
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .title {
+        height: 9.25rem;
+    }
+
+    .btnsection {
+        flex-wrap: wrap;
+    }
+
+    .btnsection{
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title {
+        height: 7.25rem;
+    }
+
+    .subtitle h4 {
+        font-size: 15px;
+    }
+
+    .subtitle {
+        height: 40px;
+    }
+
+    .tagline {
+        flex-wrap: wrap;
+    }
+
+    .btn1{
+        height: 40px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .btn2{
+        height: 40px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .btnsection{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:500px) {
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        height: 5.25rem;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .subtitle h4 {
+        font-size: 10px;
+    }
+
+    .subtitle {
+        height: 30px;
+    }
+   
+}
+
+@media (max-width:1100px) {
+    .tagline p {
+        font-size: 12px;
+    }
+
+}
+
+/* sclo */
+
+.scroll{
+    margin-top: 6.25rem;
+}
+
+.scroll-text {
+    color: #F59E0B;
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.scroll-line {
+    width: 60px;
+    height: 4px;
+    background-color: #F59E0B;
+    margin: 10px auto;
+    animation: scrollMove 1.2s infinite alternate;
+}
+
+@keyframes scrollMove {
+    from {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    to {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+}
+
+@media (max-width : 500px){
+     .scroll-text{
+        font-size: 10px;
+    }
+}
+
+/* About US */
+
+.AboutUs{
+    height: 200px;
+    width: 50%;
+}
+
+.AboutUs h1 , p{
+    text-align: center;
+}
+
+.AboutUs h1{
+    margin-top: 7.25rem;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.AboutUs p{
+    margin-top: 1rem;
+    font-size:2.0rem ;
+}
+
+@media (max-width :1600px){
+    .AboutUs h1{
+        font-size: 3rem;
+        margin-top: 5.25rem;
+
+    }
+
+    .AboutUs p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width :600px){
+    .AboutUs h1{
+        font-size: 2rem;
+
+    }
+
+    .AboutUs p{
+        font-size: 0.8rem;
+    }
+}
+
+h1{
+    text-align: center;
+    margin-top: 8.25rem;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.clientcart{
+    height: 280px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 20px;
+    margin-left: 15px;
+    margin-top: 3rem;
+}
+
+.star{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.message{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.name h4{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.name p{
+    color: #F59E0B;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width:900px){
+    h1{
+        font-size: 3.25rem;
+    }
+}
+
+@media (max-width:400px){
+    h1{
+        font-size: 2.25rem;
+    }
+}
+
+
+
+
+/* Top spacing */
+.form-spacing{
+    padding-top:100px;
+}
+
+/* Container */
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* Contact Form */
+.contact-form{
+    width:100%;
+    max-width:600px;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+}
+
+.contact-form h3{
+    color:#fff;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* Form Groups */
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    color:#fff;
+    margin-bottom:8px;
+}
+
+/* Inputs */
+.custom-input{
+    width:100%;
+    padding:12px 15px;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px;
+
+    color:#fff;
+    font-size:16px;
+    outline:none;
+}
+
+.custom-input::placeholder{
+    color:#9CA3AF;
+}
+
+.custom-input:focus{
+    border-color:#F59E0B;
+}
+
+/* Textarea */
+textarea.custom-input{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* Button */
+.submit-btn{
+    width:100%;
+    border:none;
+    cursor:pointer;
+
+    background:#F59E0B;
+    color:#0B1C2D;
+
+    font-weight:600;
+    font-size:16px;
+
+    padding:12px;
+    border-radius:30px;
+
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:rgba(245,158,11,0.9);
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .form-spacing{
+        padding-top:60px;
+    }
+
+    .contact-form{
+        padding:20px;
+    }
+
+    .contact-form h3{
+        font-size:24px;
+    }
+
+    .custom-input{
+        font-size:14px;
+    }
+
+    .submit-btn{
+        font-size:15px;
+    }
+}
+
+/* footer */
+
+
+/* =========================
+   GAIKE MEDIA POINT FOOTER
+   ========================= */
+
+.footer{
+    background:#071420;
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding-top:60px;
+    margin-top: 6.25rem;
+}
+
+/* Container */
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+/* Logo */
+.footer-section h2{
+    color:#F59E0B;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+/* Headings */
+.footer-section h3{
+    color:#ffffff;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+/* Text */
+.footer-section p{
+    color:#9CA3AF;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+/* Lists */
+.footer-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-section ul li{
+    margin-bottom:10px;
+    color:#9CA3AF;
+}
+
+/* Links */
+.footer-section a{
+    text-decoration:none;
+    color:#9CA3AF;
+    transition:0.3s ease;
+}
+
+.footer-section a:hover{
+    color:#F59E0B;
+}
+
+/* =========================
+   SOCIAL ICONS
+   ========================= */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    text-decoration:none;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+
+    color:#F59E0B;
+    font-size:20px;
+
+    transition:all 0.3s ease;
+}
+
+.social-icons a:hover{
+    background:#F59E0B;
+    color:#0B1C2D;
+    transform:translateY(-5px);
+    box-shadow:0 0 15px rgba(245,158,11,0.5);
+}
+
+/* =========================
+   FOOTER BOTTOM
+   ========================= */
+
+.footer-bottom{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p{
+    color:#9CA3AF;
+    font-size:14px;
+    margin:0;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width:768px){
+
+    .footer{
+        text-align:center;
+        padding-top:50px;
+    }
+
+    .footer-container{
+        gap:30px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .footer-section h2{
+        font-size:24px;
+    }
+
+    .footer-section h3{
+        font-size:18px;
+    }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width:480px){
+
+    .footer{
+        padding-top:40px;
+    }
+
+    .footer-container{
+        padding:0 15px;
+    }
+
+    .footer-section h2{
+        font-size:22px;
+    }
+
+    .footer-section h3{
+        font-size:17px;
+    }
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a{
+        font-size:14px;
+    }
+
+    .social-icons{
+        gap:10px;
+    }
+
+    .social-icons a{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+
+    .footer-bottom{
+        padding:15px;
+    }
+
+    .footer-bottom p{
+        font-size:13px;
+    }
+}

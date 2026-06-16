@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaike media point -services</title>
+    <link rel="stylesheet" href="services.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="logo">Gaike Media Point</a>
+
+            <div class="menu-btn">☰</div>
+
+
+            <a href="index.html" class="nav-menu">Home</a>
+            <a href="services.html" class="nav-menu">Services</a>
+            <a href="project.html" class="nav-menu">Projects</a>
+            <a href="contact.html" class="nav-menu">Contact Us</a>
+            <button class="nav-menu" onclick="window.location.href='contact.html'">Get Free Consultation</button>
+
+        </div>
+    </nav>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navMenus = document.querySelectorAll(".nav-menu");
+
+        menuBtn.addEventListener("click", () => {
+            navMenus.forEach(item => {
+                item.classList.toggle("active");
+            }); 0
+        });
+    </script>
+
+    <!-- herosection -->
+    <div class="herosection">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="subtitle">
+            <h4>GAIKE MEDIA POINT</h4>
+        </div>
+        <div class="tagline">
+            <p>We help businesses build their online presence through social media, Grow Your Business with
+                Gaike Media Point</p>
+        </div>
+        <div class="btnherosection">
+            <div class="btnsection">
+                <button class="btn1" onclick="window.location.href='contact.html'" >Get Free Consultation</button>
+                <button class="btn2" onclick="window.location.href='project.html'">View projects</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll">
+        <p class="scroll-text">Scroll down to explore our daily essentials</p>
+        <div class="scroll-line"></div>
+    </div>
+
+
+    <!-- cards -->
+    <div class="services-container">
+
+        <div class="carddiv">
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-desktop"></i>
+
+                </div>
+                <div class="info">
+                    <h3>Social Media Management</h3>
+                    <p class="dis">Comprehensive management of your Instagram, Facebook, and LinkedIn profiles. We
+                        handle
+                        content creation, posting schedules, community engagement, and growth strategies to build a
+                        loyal
+                        audience. </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li> Content Calendar </li>
+                            <li>Community Management</li>
+                            <li>Growth Strategy</li>
+                            <li>Analytics Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-mobile"></i>
+
+                </div>
+                <div class="info">
+                    <h3>Reel Creation</h3>
+                    <p class="dis">Short-form video is dominating digital reach. We script, shoot, and edit engaging
+                        reels tailored to the latest trends, ensuring your brand gets maximum visibility and engagement
+                    </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li> Trend Research</li>
+                            <li>Professional Shooting</li>
+                            <li>Scriptwriting</li>
+                            <li>Engaging Edits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                   <i class="fa-regular fa-video"></i>
+
+                </div>
+                <div class="info">
+                    <h3>Video Editing</h3>
+                    <p class="dis">From podcasts to promotional videos, our editing team turns raw footage into polished, compelling stories complete with color grading, sound design, and motion graphics.</p> </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li> Color Grading</li>
+                            <li>Sound Design</li>
+                            <li>Motion Graphics</li>
+                            <li>Fast Turnarou</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-desktop"></i>
+
+                </div>
+                <div class="info">
+                    <h3>Poster & Graphic Design</h3>
+                    <p class="dis">Visually stunning designs for all your needs. Whether it's festival posts, product launches, or offline print materials, we create graphics that capture attention instantly. </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li>Social Media Posts</li>
+                            <li>Print Design</li>
+                            <li>Brand Identity</li>
+                            <li>Analytics Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-desktop"></i>
+
+                </div>
+                <div class="info">
+                    <h3>YouTube Channel Management</h3>
+                    <p class="dis">End-to-end solutions for YouTube creators and brands. We handle SEO optimization, thumbnail design, video uploading, and subscriber engagement. </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li>Custom Thumbnails </li>
+                            <li>SEO Optimization </li>
+                            <li>Channel Analytics</li>
+                            <li>Growth Hacks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-desktop"></i>
+
+                </div>
+                <div class="info">
+                    <h3>Event Video Coverag</h3>
+                    <p class="dis">Professional video coverage for corporate events, inaugurations, seminars, and product launches. We ensure every important moment is captured in high quality. </p>
+                    <div class="pointlist">
+                        <ul>
+                            <li>Multi-cam Setup </li>
+                            <li>Live Streaming Support</li>
+                            <li>Highlight Reels</li>
+                            <li>Quick Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section class="why-choose-us">
+
+        <div class="section-title">
+            <h2>Why Choose Us?</h2>
+            <p>We help businesses grow with creative content, strategic marketing, and measurable results.</p>
+        </div>
+
+        <div class="why-container">
+
+            <div class="why-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Creative Solutions</h3>
+                <p>Unique content and marketing strategies designed specifically for your business.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Growth Focused</h3>
+                <p>Every campaign is designed to increase reach, engagement, and conversions.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>On-Time Delivery</h3>
+                <p>We value your time and ensure every project is delivered on schedule.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Client-Centric</h3>
+                <p>Transparent communication and dedicated support throughout the project.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2>GAIKE MEDIA POINT</h2>
+                <p>
+                    Helping businesses grow through Social Media Management,
+                    Reel Editing, Branding, and Digital Marketing.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/suraj-gaike-98b0a23a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@Official_SurajGaike"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Social Media Management</li>
+                    <li>Reel Editing</li>
+                    <li>Poster Design</li>
+                    <li>YouTube Management</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>gaikemediapoint@gmail.com</p>
+                <p>+91 9561622926</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gaike Media Point. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

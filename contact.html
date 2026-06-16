@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaike Media Point -ContactUs</title>
+    <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="logo">Gaike Media Point</a>
+
+            <div class="menu-btn">☰</div>
+
+
+            <a href="index.html" class="nav-menu">Home</a>
+            <a href="services.html" class="nav-menu">Services</a>
+            <a href="project.html" class="nav-menu">Projects</a>
+            <a href="contact.html" class="nav-menu">Contact Us</a>
+            <button class="nav-menu" onclick="window.location.href='contact.html'">Get Free Consultation</button>
+
+        </div>
+    </nav>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navMenus = document.querySelectorAll(".nav-menu");
+
+        menuBtn.addEventListener("click", () => {
+            navMenus.forEach(item => {
+                item.classList.toggle("active");
+            }); 
+        });
+    </script>
+
+
+<section class="contact-hero">
+
+    <span class="hero-tag">CONTACT US</span>
+
+    <h1>Let's Grow Your Brand Together</h1>
+
+    <p>
+        Ready to take your business to the next level? Connect with Gaike Media Point today.
+    </p>
+
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-form">
+
+        <h2>Get Free Consultation</h2>
+
+        <form>
+
+            <div class="form-row">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-row">
+                <input type="email" placeholder="Email Address">
+
+                <select>
+                    <option>Select Service</option>
+                    <option>Social Media Management</option>
+                    <option>Reel Creation</option>
+                    <option>Video Editing</option>
+                    <option>Poster & Graphic Design</option>
+                    <option>YouTube Channel Management</option>
+                    <option>Event Video Coverage</option>
+                    <option>School & College Promotions</option>
+                    <option>Branding & Strategy</option>
+                    <option>Website Development</option>
+                    <option>Digital Marketing</option>
+                </select>
+            </div>
+
+            <textarea rows="6" placeholder="Tell us about your project"></textarea>
+
+            <button type="submit">Send Inquiry</button>
+
+        </form>
+
+    </div>
+
+    <div class="contact-info">
+
+        <h2>Quick Contact</h2>
+
+        <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 9561622926</span>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Support</span>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <span>gaikemediapoint@gmail.com</span>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Maharashtra, India</span>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <span>Reply Within 24 Hours</span>
+        </div>
+
+    </div>
+
+</section>
+    
+
+
+
+
+    <!-- footer -->
+
+     <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2>GAIKE MEDIA POINT</h2>
+                <p>
+                    Helping businesses grow through Social Media Management,
+                    Reel Editing, Branding, and Digital Marketing.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/suraj-gaike-98b0a23a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@Official_SurajGaike"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Social Media Management</li>
+                    <li>Reel Editing</li>
+                    <li>Poster Design</li>
+                    <li>YouTube Management</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>gaikemediapoint@gmail.com</p>
+                <p>+91 9561622926</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gaike Media Point. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

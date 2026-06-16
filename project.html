@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaike Media Point -projects</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="logo">Gaike Media Point</a>
+
+            <div class="menu-btn">☰</div>
+
+
+            <a href="index.html" class="nav-menu">Home</a>
+            <a href="services.html" class="nav-menu">Services</a>
+            <a href="project.html" class="nav-menu">Projects</a>
+            <a href="contact.html" class="nav-menu">Contact Us</a>
+            <button class="nav-menu" onclick="window.location.href='contact.html'">Get Free Consultation</button>
+
+        </div>
+    </nav>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navMenus = document.querySelectorAll(".nav-menu");
+
+        menuBtn.addEventListener("click", () => {
+            navMenus.forEach(item => {
+                item.classList.toggle("active");
+            }); 0
+        });
+    </script>
+
+
+    <!-- PROJECTS PAGE -->
+
+    <section class="projects-hero">
+        <div class="hero-content">
+            <h1>Our Projects</h1>
+            <p>
+                Explore our creative work in Social Media Management, Reel Creation,
+                Video Editing, Branding, and Digital Marketing.
+            </p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+
+        
+        <h2 class="section-heading">Featured Work</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="https://www.google.com/imgres?q=instagram%20growth%20campaign&imgurl=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2Fbde19b_5d5d693179a24eed89585535c8af64aa~mv2.jpg%2Fv1%2Ffill%2Fw_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto%2Fbde19b_5d5d693179a24eed89585535c8af64aa~mv2.jpg&imgrefurl=https%3A%2F%2Fwww.snkcreation.com%2Fpost%2Finstagram-growth-agency-for-creators&docid=3cH9OrUlkdIFDM&tbnid=uPijFPVvgDdvtM&vet=12ahUKEwjo-7T07IiVAxVM3jgGHbV5E-kQnPAOegQIIBAB..i&w=980&h=653&hcb=2&ved=2ahUKEwjo-7T07IiVAxVM3jgGHbV5E-kQnPAOegQIIBAB" alt="">
+                <div class="project-info">
+                    <h3>Instagram Growth Campaign</h3>
+                    <p>Social Media Management</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.google.com/imgres?q=reel%20shoot&imgurl=https%3A%2F%2Fmwsindia.in%2Fwp-content%2Fuploads%2F2026%2F05%2FReel-Shoot.jpg&imgrefurl=https%3A%2F%2Fmwsindia.in%2Freel-shoot-studio-in-malad-mumbai%2F&docid=9V33xQFuFtIUJM&tbnid=bGYDb5g_lTljDM&vet=12ahUKEwj_77Ge7YiVAxWQ7TgGHVXIJiEQnPAOegUIggEQAQ..i&w=1000&h=667&hcb=2&ved=2ahUKEwj_77Ge7YiVAxWQ7TgGHVXIJiEQnPAOegUIggEQAQ" alt="">
+                <div class="project-info">
+                    <h3>Business Reel Series</h3>
+                    <p>Reel Creation</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.google.com/imgres?q=youtube%20brading&imgurl=https%3A%2F%2Fcdn.psdrepo.com%2Fimages%2F2x%2Fpsd-channel-branding-template-and-asset-generator-for-youtube-s3.jpg&imgrefurl=https%3A%2F%2Fpsdrepo.com%2Ffree-psd%2Fyoutube-channel-branding-template-asset-generator-freebie%2F&docid=5skqSbuuDXp7VM&tbnid=8Cu0f95ySyTQAM&vet=12ahUKEwiwyMyy7YiVAxXPwzgGHT8ENtgQnPAOegQIKxAB..i&w=800&h=600&hcb=2&ved=2ahUKEwiwyMyy7YiVAxXPwzgGHT8ENtgQnPAOegQIKxAB" alt="">
+                <div class="project-info">
+                    <h3>YouTube Branding</h3>
+                    <p>YouTube Management</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project4.jpg" alt="">
+                <div class="project-info">
+                    <h3>School Promotion</h3>
+                    <p>Marketing Campaign</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project5.jpg" alt="">
+                <div class="project-info">
+                    <h3>Event Coverage</h3>
+                    <p>Video Production</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project6.jpg" alt="">
+                <div class="project-info">
+                    <h3>Brand Identity Design</h3>
+                    <p>Branding & Strategy</p>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section class="stats-section">
+
+        
+        <div class="stat-box">
+            <h3>50+</h3>
+            <p>Reels Created</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>20+</h3>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>100K+</h3>
+            <p>Total Reach</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>95%</h3>
+            <p>Client Satisfaction</p>
+        </div>
+        
+
+    </section>
+
+    <section class="cta-section">
+
+        
+        <h2>Ready To Grow Your Brand?</h2>
+
+        <p>
+            Let's create impactful content and marketing strategies that help your
+            business stand out online.
+        </p>
+
+        <a href="contact.html" class="cta-btn">
+            Get Free Consultation
+        </a>
+        
+
+    </section>
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2>GAIKE MEDIA POINT</h2>
+                <p>
+                    Helping businesses grow through Social Media Management,
+                    Reel Editing, Branding, and Digital Marketing.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_suraj_gaike?igsh=Mm9obWdjMTVnbXYz"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/suraj-gaike-98b0a23a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@Official_SurajGaike"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Social Media Management</li>
+                    <li>Reel Editing</li>
+                    <li>Poster Design</li>
+                    <li>YouTube Management</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>gaikemediapoint@gmail.com</p>
+                <p>+91 9561622926</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gaike Media Point. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
